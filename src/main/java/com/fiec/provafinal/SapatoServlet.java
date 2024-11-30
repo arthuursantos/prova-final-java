@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@WebServlet("/produtos/*")
+@WebServlet("/sapatos/*")
 public class SapatoServlet extends HttpServlet {
 
     private SapatoRepository repository;
@@ -84,7 +84,7 @@ public class SapatoServlet extends HttpServlet {
         }
         em.getTransaction().commit();
         resp.setContentType("text/html");
-        resp.getWriter().println("<h1>Hello from PUT do PRODUTO!</h1>");
+        resp.getWriter().println("<h1>Hello from PUT do SAPATO!</h1>");
     }
 
     public void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
